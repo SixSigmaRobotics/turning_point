@@ -35,10 +35,7 @@ void middleFlagImproved()
   shootBall();
   wait1Msec(2500);
   allOff();
-  motor[leftFront] = -120;
-  motor[rightFront] = -55;
-  motor[leftBack] = -120;
-  motor[rightBack] = -55;
+  setDriveMotors(-50,-50);
   wait1Msec(1500);
   allOff();
   setDriveMotors(0, 0);
