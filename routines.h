@@ -7,20 +7,21 @@
 
 void loadBall() {
   while ( SensorValue(cLimit)== 0) {
-    motor[catapult] =  120;
+    setCatapultMotors(120);
   }
-  motor[catapult] = 5;
+  setCatapultMotors(0);
 }
 
 void shootBall() {
-  motor[catapult] = 120;
+  setCatapultMotors(120);
   wait1Msec(800);
-  motor[catapult] = 0;
+  setCatapultMotors(0);
 }
 
-void turnoff() {
+void allOff() {
+  setDriveMotors(0,0);
   setIntakeMotors(0);
-  motor[catapult]	= 0;
+  setCatapultMotors(0);
 }
 
 void turnLeft(int power) {

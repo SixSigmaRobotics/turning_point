@@ -13,5 +13,9 @@ void setIntakeMotors(int power) {
   motor[intakeB] = power;
 }
 
+void setCatapultMotors(int power) {
+ motor[catapultA] = power;
+ motor[catapultB] = power;
+}
 
 #endif

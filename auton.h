@@ -26,7 +26,7 @@ void middleFlag()
   setIntakeMotors(0);
   shootBall();
   wait1Msec(2500);
-  turnoff();
+  allOff();
 }
 
 void middleFlagImproved()
@@ -34,13 +34,13 @@ void middleFlagImproved()
   setIntakeMotors(0);
   shootBall();
   wait1Msec(2500);
-  turnoff();
+  allOff();
   motor[leftFront] = -120;
   motor[rightFront] = -55;
   motor[leftBack] = -120;
   motor[rightBack] = -55;
   wait1Msec(1500);
-  turnoff();
+  allOff();
   setDriveMotors(0, 0);
 }
 
